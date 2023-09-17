@@ -7,11 +7,14 @@ const PreviewContainer = () => {
 
   return (
     <div className="w-1/2">
-      <h2 className="font-extrabold underline">Preview</h2>
+      <h2 className="font-extrabold underline bg-gray-900 py-3 text-white pl-5">
+        Preview
+      </h2>
       <div
-        className="mt-5 break-words w-full"
+        id="preview"
+        className="mt-5 break-words w-full pl-5"
         dangerouslySetInnerHTML={{
-          __html: marked.parse(text),
+          __html: marked.parse(text, { breaks: true }),
         }}
       />
     </div>

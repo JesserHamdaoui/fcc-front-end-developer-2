@@ -7,8 +7,10 @@ const EditorContainer = () => {
   const text = useSelector((state) => state.text);
 
   return (
-    <div className="w-1/2 bg-green-200 h-screen">
-      <h2 className="font-extrabold underline">Editor</h2>
+    <div className="w-1/2 bg-green-200 min-h-screen">
+      <h2 className="font-extrabold underline bg-green-900 py-3 text-white">
+        Editor
+      </h2>
       <textarea
         className="h-5/6 w-10/12 block mx-auto mt-5"
         id="editor"
